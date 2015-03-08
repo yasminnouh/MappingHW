@@ -11,6 +11,6 @@ var mappingDataArray = mappingData.rows;
 for (var i = 0; i < mappingDataArray.length; i++) {
 	var locationObject = mappingDataArray[i];
 	
-	var marker = L.marker([40.798306, -73.962713]).addTo(map);
+	var marker = L.marker([locationObject.latitude, locationObject.longitude]).addTo(map);
 	marker.bindPopup("<b>Home address</b><br>I live here.").openPopup();
 }
